@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'test-task';
+
+  products:any[] = [
+    {
+      code: 12,
+      name: 'John',
+      category: 'sex',
+      quantity: 123
+    }
+  ]
 }
