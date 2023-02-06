@@ -1,1 +1,4 @@
-<footer></footer>
+<footer>
+  <p-button (click)="toggleTheme()" [disabled]="theme">Light</p-button>
+  <p-button (click)="toggleTheme()" [disabled]="!theme">Dark</p-button>
+</footer>
