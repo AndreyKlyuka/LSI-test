@@ -16,13 +16,13 @@ body {
   background: var(--bkg-color);
 }
 
-app-table .ng-star-inserted{
+app-table .p-paginator-bottom{
   background:  var(--bkg-color);
 }
-app-header .p-card-body{
+.p-card-body{
   background:  var(--bkg-color);
 }
-app-table  {
+app-table .p-datatable-wrapper {
   background:  var(--bkg-color);
 }
 
