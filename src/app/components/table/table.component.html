@@ -1,0 +1,24 @@
+<div class="card">
+
+  <ng-container *ngIf="currencies$ | async as currencies">
+    <p-table [value]="currencies" [paginator]="true" [totalRecords]="currencies.length" [rows]="6"
+             [rowsPerPageOptions]="[6,12,18]" >
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="code">Symbol currency<p-sortIcon field="symbol"></p-sortIcon></th>
+          <th pSortableColumn="currency">Symbol<p-sortIcon field="currency"></p-sortIcon></th>
+          <th pSortableColumn="mid">Value<p-sortIcon field="value"></p-sortIcon></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-currency>
+        <tr>
+          <td>{{currency.code}}</td>
+          <td>{{currency.currency}}</td>
+          <td>{{currency.mid}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </ng-container>
+
+</div>
+<!--<p-paginator [rows]="10" [totalRecords]="currencies.length"></p-paginator>-->

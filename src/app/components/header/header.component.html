@@ -1,0 +1,13 @@
+
+
+<p-card >
+  <header>
+    <p-button label="Clear" (click)="clearDate()" ></p-button>
+    <div class="datepicker">
+      <p-calendar [(ngModel)]="date" dateFormat="dd.mm.yy" [showIcon]="true" ></p-calendar>
+      <p-button [disabled]="!date" (onClick)="loadCurrencies()">Find</p-button>
+    </div>
+  </header>
+</p-card>
+
+
